@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>icon</key>
+			<string>关于我们</string>
+			<key>name</key>
+			<string>关于我们</string>
+			<key>pushVCName</key>
+			<string>CRAAboutViewController</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>意见反馈</string>
+			<key>icon</key>
+			<string>意见反馈</string>
+			<key>pushVCName</key>
+			<string>CRAFeedbackController</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>推送设置</string>
+			<key>icon</key>
+			<string>推送设置</string>
+			<key>pushVCName</key>
+			<string>CRAPushSettingViewController</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>版本更新</string>
+			<key>icon</key>
+			<string>版本更新</string>
+			<key>pushVCName</key>
+			<string>CRAVersionupdateController</string>
+		</dict>
+	</array>
+</array>
+</plist>

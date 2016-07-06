@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CHPresentViewController">
+            <connections>
+                <outlet property="cancleSharedAction" destination="NwE-l7-goj" id="mkx-TK-mOA"/>
+                <outlet property="linkDouBanBtn" destination="pld-Pk-bkU" id="YwV-Ne-kEF"/>
+                <outlet property="linkQZoneBtn" destination="9Cq-fG-kSc" id="9mG-py-jA5"/>
+                <outlet property="linkRenRenBtn" destination="oBb-Jk-1tC" id="CBM-0y-6C8"/>
+                <outlet property="linkWeChatBtn" destination="LQz-vV-nXa" id="BJn-hI-caE"/>
+                <outlet property="linkXinLangBtn" destination="T8w-E8-4iY" id="ZPO-0I-ggz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="111"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8w-E8-4iY">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="inc-wo-wvT"/>
+                    </constraints>
+                    <state key="normal" image="Sine"/>
+                    <connections>
+                        <action selector="sharedInfoToApp:" destination="-1" eventType="touchUpInside" id="iE8-fg-VGi"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="大分割线" translatesAutoresizingMaskIntoConstraints="NO" id="UFw-J7-fYy">
+                    <rect key="frame" x="0.0" y="78" width="350" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="WWI-gO-pfb"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Cq-fG-kSc">
+                    <rect key="frame" x="70" y="0.0" width="70" height="70"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <state key="normal" backgroundImage="WeChat_iocn"/>
+                    <connections>
+                        <action selector="sharedInfoToApp:" destination="-1" eventType="touchUpInside" id="C6x-4N-YHJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pld-Pk-bkU">
+                    <rect key="frame" x="140" y="0.0" width="70" height="70"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <state key="normal" backgroundImage="douban_icon"/>
+                    <connections>
+                        <action selector="sharedInfoToApp:" destination="-1" eventType="touchUpInside" id="llL-kr-3lx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBb-Jk-1tC">
+                    <rect key="frame" x="210" y="0.0" width="70" height="70"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <state key="normal" backgroundImage="QZone"/>
+                    <connections>
+                        <action selector="sharedInfoToApp:" destination="-1" eventType="touchUpInside" id="jOR-9T-wYQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQz-vV-nXa">
+                    <rect key="frame" x="280" y="0.0" width="70" height="70"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <state key="normal" backgroundImage="囍"/>
+                    <connections>
+                        <action selector="sharedInfoToApp:" destination="-1" eventType="touchUpInside" id="oYx-ej-pXy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwE-l7-goj">
+                    <rect key="frame" x="0.0" y="86" width="350" height="25"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <size key="titleShadowOffset" width="0.5" height="0.5"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="sharedInfoToApp:" destination="-1" eventType="touchUpInside" id="C7f-AR-SIf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.81260030729999999" green="0.88857984290000003" blue="0.58513994309999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="UFw-J7-fYy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1gN-P3-nYo"/>
+                <constraint firstItem="pld-Pk-bkU" firstAttribute="leading" secondItem="9Cq-fG-kSc" secondAttribute="trailing" id="1gj-eb-6lT"/>
+                <constraint firstItem="9Cq-fG-kSc" firstAttribute="width" secondItem="T8w-E8-4iY" secondAttribute="width" id="3Et-0k-bqa"/>
+                <constraint firstItem="oBb-Jk-1tC" firstAttribute="top" secondItem="pld-Pk-bkU" secondAttribute="top" id="9yp-RZ-5ib"/>
+                <constraint firstItem="LQz-vV-nXa" firstAttribute="top" secondItem="oBb-Jk-1tC" secondAttribute="top" id="CnD-eF-tiT"/>
+                <constraint firstItem="oBb-Jk-1tC" firstAttribute="width" secondItem="pld-Pk-bkU" secondAttribute="width" id="Ifv-IT-4V7"/>
+                <constraint firstItem="UFw-J7-fYy" firstAttribute="top" secondItem="LQz-vV-nXa" secondAttribute="bottom" constant="8" id="Kqy-el-UNh"/>
+                <constraint firstItem="NwE-l7-goj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KtI-mI-2pD"/>
+                <constraint firstItem="9Cq-fG-kSc" firstAttribute="top" secondItem="T8w-E8-4iY" secondAttribute="top" id="O3M-hB-pBd"/>
+                <constraint firstItem="pld-Pk-bkU" firstAttribute="height" secondItem="9Cq-fG-kSc" secondAttribute="height" id="SgO-bB-fLp"/>
+                <constraint firstAttribute="bottom" secondItem="NwE-l7-goj" secondAttribute="bottom" id="Ukr-Y1-hOQ"/>
+                <constraint firstAttribute="trailing" secondItem="UFw-J7-fYy" secondAttribute="trailing" id="Yr1-Hw-APY"/>
+                <constraint firstItem="LQz-vV-nXa" firstAttribute="leading" secondItem="oBb-Jk-1tC" secondAttribute="trailing" id="amW-3Z-ynr"/>
+                <constraint firstItem="T8w-E8-4iY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ao2-QT-N6I"/>
+                <constraint firstItem="9Cq-fG-kSc" firstAttribute="height" secondItem="T8w-E8-4iY" secondAttribute="height" id="cX9-02-obE"/>
+                <constraint firstItem="oBb-Jk-1tC" firstAttribute="leading" secondItem="pld-Pk-bkU" secondAttribute="trailing" id="gve-iN-2ep"/>
+                <constraint firstItem="T8w-E8-4iY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="iih-GM-jDs"/>
+                <constraint firstItem="LQz-vV-nXa" firstAttribute="height" secondItem="oBb-Jk-1tC" secondAttribute="height" id="jaF-M8-2ao"/>
+                <constraint firstItem="pld-Pk-bkU" firstAttribute="top" secondItem="9Cq-fG-kSc" secondAttribute="top" id="oUT-Dg-LzG"/>
+                <constraint firstItem="LQz-vV-nXa" firstAttribute="width" secondItem="oBb-Jk-1tC" secondAttribute="width" id="rMK-LU-QY9"/>
+                <constraint firstAttribute="trailing" secondItem="LQz-vV-nXa" secondAttribute="trailing" id="twE-6f-YNj"/>
+                <constraint firstItem="9Cq-fG-kSc" firstAttribute="leading" secondItem="T8w-E8-4iY" secondAttribute="trailing" id="ucB-VC-Zeq"/>
+                <constraint firstItem="oBb-Jk-1tC" firstAttribute="height" secondItem="pld-Pk-bkU" secondAttribute="height" id="udZ-GR-BhU"/>
+                <constraint firstItem="NwE-l7-goj" firstAttribute="top" secondItem="UFw-J7-fYy" secondAttribute="bottom" constant="7.5" id="yO8-ww-d3u"/>
+                <constraint firstAttribute="trailing" secondItem="NwE-l7-goj" secondAttribute="trailing" id="zN8-53-YSX"/>
+                <constraint firstItem="pld-Pk-bkU" firstAttribute="width" secondItem="9Cq-fG-kSc" secondAttribute="width" id="zoN-dg-eHk"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-202" y="84.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="QZone" width="60" height="60"/>
+        <image name="Sine" width="60" height="60"/>
+        <image name="WeChat_iocn" width="60" height="60"/>
+        <image name="douban_icon" width="60" height="60"/>
+        <image name="囍" width="108" height="108"/>
+        <image name="大分割线" width="375" height="6"/>
+    </resources>
+</document>

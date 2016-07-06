@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeFamousCellId" id="gTV-IL-0wX" customClass="CRAHomeFamousCell">
+            <rect key="frame" x="0.0" y="0.0" width="187" height="89"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="187" height="89"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生活的痕迹" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RK-Lu-fba">
+                        <rect key="frame" x="10" y="10" width="70" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一起来追寻生活的痕迹吧！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lD6-5s-HJA">
+                        <rect key="frame" x="10" y="50" width="96" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zd8-RH-lK3" customClass="CRAHomeStartScoreView">
+                        <rect key="frame" x="10" y="32" width="60" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="BCU-DO-R5X"/>
+                            <constraint firstAttribute="width" constant="60" id="rlI-D0-l8k"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeSupport地理位置" translatesAutoresizingMaskIntoConstraints="NO" id="HIR-gC-HPG">
+                        <rect key="frame" x="118" y="67" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="DLH-bm-vxe"/>
+                            <constraint firstAttribute="width" constant="15" id="dFN-iG-KZf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="距离200米" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZk-al-17E">
+                        <rect key="frame" x="134" y="69" width="45" height="11"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" red="0.99607843137254903" green="0.72941176470588232" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeSupport图片新闻" translatesAutoresizingMaskIntoConstraints="NO" id="PNN-Ku-ifI">
+                        <rect key="frame" x="126" y="10" width="53" height="53"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="53" id="SMG-yy-WxK"/>
+                            <constraint firstAttribute="width" constant="53" id="k87-74-Ixc"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="GZk-al-17E" firstAttribute="top" secondItem="PNN-Ku-ifI" secondAttribute="bottom" constant="6" id="3PI-LK-547"/>
+                <constraint firstItem="1RK-Lu-fba" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="68R-jU-XMj"/>
+                <constraint firstItem="HIR-gC-HPG" firstAttribute="centerY" secondItem="GZk-al-17E" secondAttribute="centerY" id="7b4-Og-0VR"/>
+                <constraint firstItem="zd8-RH-lK3" firstAttribute="leading" secondItem="1RK-Lu-fba" secondAttribute="leading" id="8oc-WE-Do3"/>
+                <constraint firstItem="lD6-5s-HJA" firstAttribute="leading" secondItem="zd8-RH-lK3" secondAttribute="leading" id="9PE-QS-U0t"/>
+                <constraint firstItem="1RK-Lu-fba" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="EjI-cj-Ic6"/>
+                <constraint firstAttribute="trailing" secondItem="PNN-Ku-ifI" secondAttribute="trailing" constant="8" id="IxC-48-qh5"/>
+                <constraint firstItem="PNN-Ku-ifI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1RK-Lu-fba" secondAttribute="trailing" constant="15" id="Puq-68-gty"/>
+                <constraint firstItem="zd8-RH-lK3" firstAttribute="top" secondItem="1RK-Lu-fba" secondAttribute="bottom" constant="5" id="aTC-bS-mwn"/>
+                <constraint firstItem="lD6-5s-HJA" firstAttribute="top" secondItem="zd8-RH-lK3" secondAttribute="bottom" constant="6" id="cL1-xE-mlR"/>
+                <constraint firstItem="PNN-Ku-ifI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="h0R-rT-QAK"/>
+                <constraint firstItem="PNN-Ku-ifI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lD6-5s-HJA" secondAttribute="trailing" constant="12" id="m2b-03-OS3"/>
+                <constraint firstItem="GZk-al-17E" firstAttribute="leading" secondItem="HIR-gC-HPG" secondAttribute="trailing" constant="1" id="qS8-4p-apy"/>
+                <constraint firstItem="GZk-al-17E" firstAttribute="trailing" secondItem="PNN-Ku-ifI" secondAttribute="trailing" id="wPX-RU-gAH"/>
+            </constraints>
+            <size key="customSize" width="177" height="80"/>
+            <connections>
+                <outlet property="coverImage" destination="PNN-Ku-ifI" id="cez-if-MbE"/>
+                <outlet property="distanceLabel" destination="GZk-al-17E" id="EfJ-LJ-huZ"/>
+                <outlet property="introLabel" destination="lD6-5s-HJA" id="cxZ-gS-1Hi"/>
+                <outlet property="levelView" destination="zd8-RH-lK3" id="U4L-r5-Mlh"/>
+                <outlet property="nameLabel" destination="1RK-Lu-fba" id="a2d-yU-RQm"/>
+            </connections>
+            <point key="canvasLocation" x="242.5" y="98.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="HomeSupport图片新闻" width="65" height="65"/>
+        <image name="HomeSupport地理位置" width="24" height="24"/>
+    </resources>
+</document>

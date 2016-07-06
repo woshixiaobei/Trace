@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MXNVerifySuccessController">
+            <connections>
+                <outlet property="btn" destination="Zd3-gT-GRg" id="mTE-3r-JRy"/>
+                <outlet property="confirmPasswordView" destination="SgJ-e0-7Ui" id="2tP-28-08K"/>
+                <outlet property="passwordView" destination="VB8-V2-Ni7" id="dBO-FZ-5lw"/>
+                <outlet property="view" destination="p25-vr-fCt" id="aP6-wz-Sku"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="p25-vr-fCt">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zd3-gT-GRg">
+                    <rect key="frame" x="20" y="241" width="560" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="YxA-IU-FVn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="提交" backgroundImage="圆角矩形-2-拷贝-2"/>
+                    <connections>
+                        <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="tJZ-cB-gNh"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VB8-V2-Ni7">
+                    <rect key="frame" x="20" y="105" width="560" height="38"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="qW3-dw-Uyh"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SgJ-e0-7Ui">
+                    <rect key="frame" x="20" y="173" width="560" height="38"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Zd3-gT-GRg" secondAttribute="trailing" constant="20" id="1zH-9S-d9i"/>
+                <constraint firstItem="Zd3-gT-GRg" firstAttribute="leading" secondItem="p25-vr-fCt" secondAttribute="leading" constant="20" id="5Eu-sl-DpU"/>
+                <constraint firstItem="VB8-V2-Ni7" firstAttribute="top" secondItem="p25-vr-fCt" secondAttribute="top" constant="105" id="LwS-An-tR4"/>
+                <constraint firstItem="SgJ-e0-7Ui" firstAttribute="width" secondItem="VB8-V2-Ni7" secondAttribute="width" id="Md7-YT-hcT"/>
+                <constraint firstItem="SgJ-e0-7Ui" firstAttribute="leading" secondItem="VB8-V2-Ni7" secondAttribute="leading" id="PWH-hY-lCM"/>
+                <constraint firstItem="VB8-V2-Ni7" firstAttribute="leading" secondItem="p25-vr-fCt" secondAttribute="leading" constant="20" id="ad4-zY-I6o"/>
+                <constraint firstItem="SgJ-e0-7Ui" firstAttribute="height" secondItem="VB8-V2-Ni7" secondAttribute="height" id="nQS-o0-IkT"/>
+                <constraint firstItem="Zd3-gT-GRg" firstAttribute="top" secondItem="SgJ-e0-7Ui" secondAttribute="bottom" constant="30" id="r9Z-5B-S1q"/>
+                <constraint firstItem="SgJ-e0-7Ui" firstAttribute="top" secondItem="VB8-V2-Ni7" secondAttribute="bottom" constant="30" id="rFl-xU-SXT"/>
+                <constraint firstAttribute="trailing" secondItem="VB8-V2-Ni7" secondAttribute="trailing" constant="20" id="si7-04-tZf"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="圆角矩形-2-拷贝-2" width="537" height="91"/>
+    </resources>
+</document>

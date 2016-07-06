@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CRANewsTimeCell">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="95"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oGg-58-3Fo">
+                    <rect key="frame" x="10" y="0.0" width="389" height="95"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AyC-6d-qti">
+                            <rect key="frame" x="301" y="8" width="80" height="79"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="2xp-oG-q0w"/>
+                                <constraint firstAttribute="height" constant="79" id="aLt-CR-Ubj"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Da-cf-Phw">
+                            <rect key="frame" x="8" y="8" width="274" height="79"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="AyC-6d-qti" secondAttribute="trailing" constant="8" id="14z-Pp-gUb"/>
+                        <constraint firstItem="4Da-cf-Phw" firstAttribute="top" secondItem="AyC-6d-qti" secondAttribute="top" id="4UT-4H-dPy"/>
+                        <constraint firstItem="AyC-6d-qti" firstAttribute="top" secondItem="oGg-58-3Fo" secondAttribute="top" constant="8" id="5FQ-AG-0WI"/>
+                        <constraint firstItem="4Da-cf-Phw" firstAttribute="bottom" secondItem="AyC-6d-qti" secondAttribute="bottom" id="Wk0-4T-kVN"/>
+                        <constraint firstAttribute="bottom" secondItem="AyC-6d-qti" secondAttribute="bottom" constant="8" id="Z0H-o1-igH"/>
+                        <constraint firstItem="4Da-cf-Phw" firstAttribute="leading" secondItem="oGg-58-3Fo" secondAttribute="leading" constant="8" id="f71-bo-dgU"/>
+                        <constraint firstItem="AyC-6d-qti" firstAttribute="leading" secondItem="4Da-cf-Phw" secondAttribute="trailing" constant="19" id="oX4-ma-Wmq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="oGg-58-3Fo" secondAttribute="trailing" constant="10" id="Gyy-4Y-yFc"/>
+                <constraint firstItem="oGg-58-3Fo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bEA-2F-Xdt"/>
+                <constraint firstAttribute="bottom" secondItem="oGg-58-3Fo" secondAttribute="bottom" id="hph-Jd-Ihf"/>
+                <constraint firstItem="oGg-58-3Fo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="qwh-15-e79"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="pictureView" destination="AyC-6d-qti" id="CJd-pz-4GP"/>
+                <outlet property="titleLabel" destination="4Da-cf-Phw" id="WAx-y5-Svd"/>
+            </connections>
+            <point key="canvasLocation" x="295.5" y="250.5"/>
+        </view>
+    </objects>
+</document>

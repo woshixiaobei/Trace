@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="163" id="KGk-i7-Jjw" customClass="CARCricleJudgeDetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="163"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="319" height="162.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LjA-lQ-cUu">
+                        <rect key="frame" x="18" y="8" width="59.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06-20 24:06" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaJ-xY-Kpi">
+                        <rect key="frame" x="223" y="10" width="78" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebB-eW-TAc">
+                        <rect key="frame" x="18" y="34" width="283" height="84"/>
+                        <string key="text">青岛现在开始进入桑拿天，现在温度虽然不高，但湿度很大，有些闷，来青的外地朋友注意防暑啊。来青旅游私人订制，全程用车服务，全程空调，让您一路安全，清爽
+舒适。</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nlb-oh-JFA">
+                        <rect key="frame" x="241" y="126" width="60" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="hm3-4n-IoG"/>
+                        </constraints>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <state key="normal" title="查看">
+                            <color key="titleColor" red="0.018639890940000001" green="0.13375629189999999" blue="0.0515153104" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Nlb-oh-JFA" firstAttribute="top" secondItem="ebB-eW-TAc" secondAttribute="bottom" constant="8" id="6ST-fE-uNN"/>
+                    <constraint firstItem="LjA-lQ-cUu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="7If-2b-cuR"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Nlb-oh-JFA" secondAttribute="bottom" constant="-1.5" id="Dgd-cl-cTL"/>
+                    <constraint firstItem="ebB-eW-TAc" firstAttribute="trailing" secondItem="xaJ-xY-Kpi" secondAttribute="trailing" id="I9d-Q0-BrZ"/>
+                    <constraint firstItem="ebB-eW-TAc" firstAttribute="leading" secondItem="LjA-lQ-cUu" secondAttribute="leading" id="If9-1M-llF"/>
+                    <constraint firstItem="Nlb-oh-JFA" firstAttribute="trailing" secondItem="ebB-eW-TAc" secondAttribute="trailing" id="MIc-yZ-cgT"/>
+                    <constraint firstItem="ebB-eW-TAc" firstAttribute="top" secondItem="LjA-lQ-cUu" secondAttribute="bottom" constant="8" id="RUr-xQ-eMQ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xaJ-xY-Kpi" secondAttribute="trailing" constant="10" id="T8a-pX-yke"/>
+                    <constraint firstAttribute="topMargin" secondItem="LjA-lQ-cUu" secondAttribute="top" id="k6c-Nj-5UX"/>
+                    <constraint firstItem="xaJ-xY-Kpi" firstAttribute="bottom" secondItem="LjA-lQ-cUu" secondAttribute="bottom" id="z5I-WY-3RG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="QuestionLabel" destination="LjA-lQ-cUu" id="DHS-M9-nqs"/>
+                <outlet property="addTime" destination="xaJ-xY-Kpi" id="lsx-RA-vJV"/>
+                <outlet property="answerLabel" destination="ebB-eW-TAc" id="eRU-pZ-QCz"/>
+                <outlet property="inspectButton" destination="Nlb-oh-JFA" id="MXt-rJ-HRt"/>
+            </connections>
+            <point key="canvasLocation" x="366.5" y="205.5"/>
+        </tableViewCell>
+    </objects>
+</document>

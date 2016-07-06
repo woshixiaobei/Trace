@@ -1,0 +1,42 @@
+//
+//  TracePrefixHeader.pch
+//  Trace
+//
+//  Created by Clark on 16/6/19.
+//  Copyright © 2016年 CrazyHacker. All rights reserved.
+//
+
+// 设置 NSLog 输出
+#ifdef DEBUG
+#define NSLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
+#if __OBJC__
+#define MainScreenWidth [UIScreen mainScreen].bounds.size.width
+#define MXNUserName @"MXNUserName"
+#define MXNPassword @"MXNPassword"
+#define MXNRememberBool @"MXNRememberBool"
+#define MXNAlreadyLogined @"MXNAlreadyLogined"
+#define MXNUserMobile @"MXNUserMobile"
+#define MXNUserHeadPortrait @"MXNUserHeadPortrait"
+#define MXNUserFullName @"MXNUserFullName"
+#define MXNUserGender @"MXNUserGender"
+
+
+#import <Masonry.h>
+#import <NSObject+YYModel.h>
+#import <MJRefresh.h>
+#import <MBProgressHUD.h>
+
+#import "CZAdditions.h"
+#import "UIImageView+WebCache.h"
+
+#import "MBProgressHUD.h"
+
+#import "CRAHTTPSessionManager.h"
+#import "UIImageView+CRAWebImage.h"
+#import "CRANetworkManager.h"
+
+#endif
